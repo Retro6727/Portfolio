@@ -1,0 +1,89 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<body>
+    <div class="text-center" id="heading">
+       <h3 class="display-4">Hello I'm Rupesh Pandey</h3>
+       <h4>Computer Science PostGraduate</h4>
+       <button class="button" id="download-button" onclick="access()">
+           <span>My Resume</span>
+       </button>
+    </div>
+
+    <div class="about-sec">
+    <h2>ABOUT ME </h2>
+    <p id="abouts">
+       I am a cool guy who loves to play, code and execute the program. I have pursued Masters of Science in  Advanced Computer Science from University of Sussex and learned new
+       things, making friends and participating in games. I have a knack to travel around and spend it as a vacation.
+    </p>
+    </div>
+    <h2>SKILLS</h2>
+    <div class="skills">
+        <div class="skill">
+            <div class="skill-name">C++</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="75"></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Python</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="70"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">SQL</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="85"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">AWS</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="45"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Front-End Development</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="50"></div><br />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Education-section"> 
+        <h2>Education</h2>
+		<section id=timeline>
+            <div class="container py-5">
+                <div class="main-timeline-2">
+                    <div class="timeline-2 left-2">
+                        <div class="card">
+                            <img src="https://logowik.com/content/uploads/images/university-of-sussex5628.jpg" class="card-img-top"
+                                 alt="Responsive image">
+                            <div class="card-body p-4">
+                                <h4 class="fw-bold mb-4">Ut enim ad minim veniam</h4>
+                                <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2023</p>
+                                <p class="mb-0">
+                                    MS Advanced Computer Science
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-2 right-2">
+                        <div class="card">
+                            <img src="https://logowik.com/content/uploads/images/amity-university9126.jpg" class="card-img-top"
+                                 alt="Responsive image">
+                            <div class="card-body p-4">
+                                <h4 class="fw-bold mb-4">Duis aute irure dolor</h4>
+                                <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2021</p>
+                                <p class="mb-0">
+                                    B.Tech Computer Science and Technology
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+		</section>
+    </div>
+</body>
