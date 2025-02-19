@@ -56,7 +56,6 @@ li {
   justify-content: space-between;
   height: 100vh;
   padding: 0 10%;
-  background: linear-gradient(135deg, #1f2937, #0d1117);
   color: white;
 }
 
@@ -129,7 +128,6 @@ li {
 .container2, .container3, .container4 {
   padding: 80px 15%;
   border-top: 2px solid #30363d;
-  background: #161b22;
 }
 
 .container5 .link1, .link2, .link3 {
