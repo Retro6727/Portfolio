@@ -1,7 +1,7 @@
 export default function About() {
     return (
         <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
-            <div style={{ flex: 1, padding: '10px' }}>
+            <div className="profileImage">
                 <img 
                     src="/myprofile.jpg"
                     alt="Your Image" 

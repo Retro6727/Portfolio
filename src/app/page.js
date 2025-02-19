@@ -11,6 +11,7 @@ export default function Home() {
       <div className="container1">
         <div className="textColumn">
           <title>Welcome To My Portfolio !!</title>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
           <h1>Hi, My name is Rupesh</h1>
           <h2>I am a Web Developer | 3D Artist</h2>
         </div>
