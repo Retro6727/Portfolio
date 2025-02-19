@@ -6,7 +6,7 @@ export default function Project() {
         <h1>Projects</h1>
         <h2>Cafetaria Management System</h2>
         <strong>Technologies Used: HTML, CSS, Bootstrap, Django, Python, REST API </strong><br />
-        <Link href={"https://github.com/Retro6727/EDjango.git"} target="_blank">GitHub</Link>
+        <Link href={"https://github.com/Retro6727/CafeProject.git"} target="_blank">GitHub</Link>
         <h4>Description</h4>
         <p>
         The Cafeteria Management System is a web-based application designed to streamline the operations of a cafeteria. It allows users to view the menu, place orders, track inventory, and manage payments. The system provides an admin dashboard for cafeteria staff to manage the menu, view orders, and track sales. Built using Django for the backend and REST APIs for efficient communication between the frontend and backend, the system ensures smooth user interaction and operational efficiency. HTML, CSS, and Bootstrap are used to create a responsive, user-friendly interface that can be accessed across devices. 
