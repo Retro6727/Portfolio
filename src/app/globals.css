@@ -4,24 +4,43 @@
 
 
 :root {
-  --background-color: #121212;
+  --g1: #529c3d;
+  --g2: #6934aa;
+  --g3: #06b6d4;
+  --background-color: linear-gradient(90deg, var(--g1), var(--g2), var(--g3));
   --text-color: #e0e0e0;
   --header-color: #f4f7fb;
   --link-color: #06b6d4;
   --accent: #06b6d4;
   --accent-2: #5b8def;
-  overflow-x: hidden;
 }
 
 
 body {
-  background-color: var(--background-color);
+  /* use a solid fallback color and allow gradients via `background` */
+  /* solid fallback and animated gradient background */
+  background-color: #121212;
+  background: var(--background-color);
+  background-size: 300% 100%;
+  animation: gradientShift 10s linear infinite;
   color: var(--text-color);
   font-family: 'Space Mono', sans-serif;
-  margin: 15px;
-  padding: 15px;
-  transition: background-color 0.3s, color 0.3s;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
 }
+
+html, body {
+  height: 100%;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 
 h1, h2 {
   color: var(--header-color);
@@ -86,6 +105,7 @@ li {
   height: 100vh;
   padding: 0 5%;
   color: white;
+  margin: 40px
 }
 
 .textColumn {
@@ -150,7 +170,7 @@ li {
   text-align: left;
   font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 4rem;
+  margin-bottom: 10%;
 }
 
 
@@ -222,4 +242,27 @@ li {
 @media (max-width: 720px) {
   .skills-list { gap: 10px 12px; margin-top: 12px }
   .skills-list li { padding: 7px 12px; font-size: 0.92rem }
+}
+
+/* Background video styles (ensure video is behind content and content has padding) */
+.bg-video {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.75;
+  filter: contrast(1.02) saturate(1.05);
+}
+
+.bg-video-wrapper {
+  min-height: 100vh;
+}
+
+.app-content {
+  position: relative;
+  z-index: 1;
+  padding: 15px;
 }

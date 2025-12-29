@@ -22,7 +22,14 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="bg-video-wrapper">
+          <video autoPlay muted loop playsInline className="bg-video">
+            <source src="/0_Space_Planets_1080x1080.mov" type="video/quicktime" />
+            Your browser does not support the video tag.
+          </video>
+
+          <div className="app-content">{children}</div>
+        </div>
       </body>
     </html>
   );
