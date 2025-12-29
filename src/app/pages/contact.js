@@ -8,8 +8,8 @@ export default function Social()
         <h3>Follow Me On</h3>
         <div className="container5">
             <Link href={"https://www.instagram.com/rupe.sh790/"} className="link1">Instagram</Link>
-            <Link href='#' className="link2">X</Link>
-            <Link href={"https://www.upwork.com/freelancers/~01024bcc036fd3e033"} className="link3">UpWork</Link>
+            <Link href='https://x.com/RupeshPure8318' className="link2">X</Link>
+            <Link href={"https://rupeshsspace17.quora.com/"} className="link3">Quora</Link>
         </div>
         </>
     )
